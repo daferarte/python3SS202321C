@@ -48,7 +48,7 @@ class Personas:
         self.sexo=sexo
 
     def consultar_informacion(self):
-        return f' Su informacion es la siguiente: {self.getCedula()} {self.getNombre()} {self.getApellido()} {self.getFCumple()} {self.getSexo()} {self.getTelefono()}'
+        return f' Su informacion de persona es la siguiente: {self.getCedula()} {self.getNombre()} {self.getApellido()} {self.getFCumple()} {self.getSexo()} {self.getTelefono()}'
 
     def actualizar_info(self, cedula, nombre, apellidos, fcumple, telefono, sexo):
         self.setCedula(cedula)
@@ -57,7 +57,3 @@ class Personas:
         self.setfcumple(fcumple)
         self.settelefono(telefono)
         self.setSexo(sexo)
-
-persona= Personas(123,'daniel','arteaga', '25/05/92', '123', 'M')
-print(persona.getCedula())
-print(persona.consultar_informacion())
